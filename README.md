@@ -1,6 +1,6 @@
 # dory-http-proxy
 
-Forked from dinghy-http-proxy for SSL support.  Not pushed upstream since the solution here is temporary.
+dory-http-proxy is the default http proxy for [dory](https://github.com/FreedomBen/dory)
 
 ## Building and pushing
 
