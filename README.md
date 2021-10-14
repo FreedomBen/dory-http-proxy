@@ -1,16 +1,17 @@
 # dory-http-proxy
 
-dory-http-proxy is the default http proxy for [dory](https://github.com/FreedomBen/dory)
+Forked from dinghy-http-proxy for SSL support. Not pushed upstream since the solution here is temporary.
 
-## Building and pushing
+### Build and push images
 
-Login, build, and push:
+Create the builder:
 
 ```bash
-$ DHP_VER=2.6.2.1
-$ docker login docker.io
-$ docker build -t docker.io/freedomben/dory-http-proxy:${DHP_VER} -t docker.io/freedomben/dory-http-proxy:latest .
-$ docker push docker.io/freedomben/dory-http-proxy:${DHP_VER}
-$ docker push docker.io/freedomben/dory-http-proxy:latest
-$ git tag "v${DHP_VER}" && git push --tags
+make builder
+```
+
+Build and push images:
+
+```bash
+make build push
 ```
