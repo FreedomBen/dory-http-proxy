@@ -65,6 +65,7 @@ server {
 		include /etc/nginx/vhost.d/default;
 	{{ end }}
 
+	error_page 502 /502.html;
 	error_page 503 /503.html;
 
 	location / {
@@ -82,6 +83,10 @@ server {
 		{{ end }}
 	}
 
+	location /502.html {
+		root /var/www/nginx;
+		internal;
+	}
 	location /503.html {
 		root /var/www/nginx;
 		internal;
