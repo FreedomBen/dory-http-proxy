@@ -1,4 +1,6 @@
-FROM codekitchen/dinghy-http-proxy:2.6.2
+ARG version
+
+FROM tripox/dinghy-http-proxy:${version}
 LABEL image.authors="Benjamin Porter <BenjaminPorter86@gmail.com>" \
       image.authors="Mathias Larsen <tripox@tripox.dk>"
 
